@@ -1,0 +1,70 @@
+.menu-top {
+  background-color: whitesmoke;
+  clear: both;
+}
+
+.menu-top input[type=checkbox] {
+  display: none;
+}
+
+.menu-top #btn_menu:checked ~ .menu-top--left {
+  display: block;
+}
+
+.menu-top label {
+  height: 50px;
+  line-height: 100px;
+  width: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  border: 2px #ac8484 solid;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-top .menu-top--main {
+  background-color: red;
+  display: inline-block;
+}
+
+.menu-top .menu-top--main .menu-top--main-left {
+  float: left;
+  width: 300px;
+  background-color: yellowgreen;
+}
+
+.menu-top .menu-top--main .menu-top--main-right {
+  float: right;
+  width: 300px;
+  background-color: yellow;
+}
+
+.menu-top .menu-top--main .menu-top--main-right div {
+  float: right;
+}
+
+.menu-top .menu-top--left {
+  float: left;
+  background-color: gray;
+  width: 230px;
+  display: none;
+}
+
+.menu-top .menu-top--left ul {
+  list-style-type: none;
+}
+
+.menu-top .menu-top--left ul a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  border: 1px black solid;
+  padding: 20px;
+}
+
+.menu-top .menu-top--right {
+  float: right;
+  background-color: blueviolet;
+  margin-left: 230px;
+}
+/*# sourceMappingURL=menu_top.css.map */

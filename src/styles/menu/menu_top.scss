@@ -1,0 +1,70 @@
+.menu-top {
+    background-color: whitesmoke;
+    clear:both;
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    #btn_menu:checked ~ .menu-top--left {
+        display: block;
+    }
+
+    label {
+        height     : 50px;
+        line-height: 100px;
+        width      : 100px;
+        font-size  : 50px;
+        font-weight: bold;
+        border     : 2px rgb(172, 132, 132) solid;
+        cursor     : pointer;
+        text-align : center;
+
+    }
+
+    .menu-top--main{
+        background-color: red;
+        display: inline-block;
+
+        .menu-top--main-left{
+            float: left;
+            width: 300px;
+            background-color: yellowgreen;
+        }
+        
+        .menu-top--main-right{
+            float: right;
+            width: 300px;
+            background-color: yellow;
+
+            div{
+                float: right;
+            }
+        }
+    }
+
+    .menu-top--left {
+        float:left;
+        background-color: gray;
+        width: 230px;
+        display         : none;
+    
+        ul{
+            list-style-type: none;
+        
+            a {
+                display    : block;
+                height     : 50px;
+                line-height: 50px;
+                border     : 1px black solid;
+                padding    : 20px;
+            }
+        }
+    }
+
+    .menu-top--right{
+      float: right;    
+      background-color: blueviolet;
+      margin-left: 230px;
+    }
+}
