@@ -6,12 +6,12 @@ import menuTag from '../tags/menu_tags';
 
 const InitState = {
     menuBaseTop: [
-        { icon: '', item: 'dashboard', url: '' },
-        { icon: '', item: 'active ordes', url: '' },
-        { icon: '', item: 'order history', url: '' },
-        { icon: '', item: 'menu', url: '' },
-        { icon: '', item: 'food products', url: '' },
-        { icon: '', item: 'settings', url: '' }
+        { item: 'dashboard', url: '' },
+        { item: 'active orders', url: '' },
+        { item: 'order history', url: '' },
+        { item: 'menu', url: '' },
+        { item: 'food products', url: '' },
+        { item: 'settings', url: '' }
     ]
 };
 
@@ -26,4 +26,4 @@ const reducer = (state = InitState, actions) => {
 
 const store = createStore(reducer, applyMiddleware(thunk))
 
-export default store
+export default store;

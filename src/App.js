@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 //css
-// import MenuTop from './components/menu/menu_top';
+import MenuTop from './components/menu/menu_top';
 import ProductInfo from './components/forms/product_info';
 //external files
 import store from './redux/stores/menu_store';
@@ -16,7 +16,7 @@ function App() {
     <Provider store={store}>
       <Router history={history}>
       <div>
-        <ProductInfo />
+        <MenuTop/>
       </div>
       </Router>
     </Provider >
